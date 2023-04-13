@@ -5,3 +5,15 @@ $fa-font-path: './webfonts';
 @import '@fortawesome/fontawesome-free/scss/solid.scss';
 
 @import 'bootstrap/scss/bootstrap';
+
+
+.debug{
+    border: 1px solid red;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto','sans-serif';
+}
+
+
