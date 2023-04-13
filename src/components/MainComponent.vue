@@ -9,17 +9,15 @@
         </div>
     </div>
     <div class="debug iconBox d-flex align-items-center">
-        <div class="container py-5 px-0 debug">
-            <div>
-                <div>
-                    <!-- fare un v-for -->
-                    <ul class="d-flex justify-content-around">
-                        <li v-for="(link, index) in shopList" :key="index"   class="d-flex align-items-center">
-                            <img :src="'../assets/img/buy'+ link.icon" alt="">
-                            <span class="text-uppercase text-white ms-2 ">{{link.text}}</span>
-                        </li>
-                    </ul>
-                </div>
+        <div class="container py-2 px-0 debug">
+            <div class="w-100">
+                <!-- fare un v-for -->
+                <ul class="d-flex justify-content-around ps-0 m-0">
+                    <li v-for="(link, index) in shopList" :key="index" class="d-flex align-items-center ">
+                        <img  :src="link.icon" alt="">
+                        <span class="text-uppercase text-white ms-1 ">{{link.text}}</span>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -47,7 +45,7 @@ import { mainLinks } from '../data/data.js';
 
     .iconBox{
         background-color: $blue-bg;
-        height: 140px;
+        // height: 140px;
 
     }
 
@@ -58,5 +56,10 @@ import { mainLinks } from '../data/data.js';
     span{
         font-size: .8rem;
         white-space: nowrap;
+    }
+
+
+    ul{
+        list-style: none;
     }
 </style>

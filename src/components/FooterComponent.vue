@@ -23,8 +23,14 @@
                     <button class="btn btn-primary"></button>
                 </div>
                 <div>
-                    <ul>
-                        <li></li>
+                    <ul class="d-flex align-items-center mb-0">
+                        <li class="me-2">follow us</li>
+                        <div>
+                            <a v-for="(icon,index) in socialList" :key="icon" class="me-2" href="">
+                                <img :src="icon.text" alt="">
+                            </a>
+                        </div>
+                        
                     </ul>
                 </div>
             </div>
@@ -34,13 +40,18 @@
 
 <script>
 import {footerLinks} from '../data/data.js';
+import {socialLinks} from '../data/data.js';
+
     export default {
         name: 'FooterComponent',
         data(){
             return {
-                footerList: footerLinks
+                footerList: footerLinks,
+                socialList: socialLinks,
+                
             }
         }
+        
         
     }
 </script>

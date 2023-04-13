@@ -56,32 +56,31 @@ const headerLinks = [
 
 
 const mainLinks = [
-    {   
-        icon: '-comics-digital-comics.png',
+    {   icon: "/img/buy-comics-digital-comics.png",
         text: "digital comics",
         url: "#",
         current: false,
     },
     {   
-        icon: '-comics-merchandise.png',
+        icon: "/img/buy-comics-merchandise.png",
         text: "dc merchandise",
         url: "#",
         current: false,
     },
     {   
-        icon: '-comics-shop-locator.png',
+        icon: "/img/buy-comics-subscriptions.png",
         text: "subscription",
         url: "#",
         current: false,
     },
     {   
-        icon: '-comics-subscriptions.png',
+        icon: "/img/buy-comics-shop-locator.png",
         text: "comic shop locator",
         url: "#",
         current: false,
     },
     {   
-        icon: '-dc-power-visa.svg',
+        icon: "/img/buy-dc-power-visa.svg",
         text: "dc power visa",
         url: "#",
         current: false,
@@ -213,9 +212,42 @@ const footerLinks = [
             },
         ]
     },
+    
 
     
 
 ];
 
-export {headerLinks, mainLinks, footerLinks };
+const socialLinks = [
+    {
+        text: "/img/footer-facebook.png",
+        url: "#",
+        
+    },
+    {
+        text: "/img/footer-twitter.png",
+        url: "#",
+        
+    },
+    {
+        text: "/img/footer-youtube.png",
+        url: "#",
+        
+    },
+    {
+        text: "/img/footer-pinterest.png",
+        url: "#",
+    
+    },
+    {
+        text: "/img/footer-periscope.png",
+        url: "#",
+        
+    },
+
+];
+
+
+
+
+export {headerLinks, mainLinks, footerLinks, socialLinks };

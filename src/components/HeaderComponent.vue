@@ -3,7 +3,7 @@
         <div class="container py-4 px-0">
             <div class="d-flex justify-content-between align-items-center m-0">
                 <div class="logo">
-                    <img src="../assets/img/dc-logo.png" alt="">
+                    <img src="/img/dc-logo.png" alt="">
                 </div>
                 <div>
                     <ul class="d-flex gap-4">
