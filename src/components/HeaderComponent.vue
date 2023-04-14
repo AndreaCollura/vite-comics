@@ -33,6 +33,7 @@ import { headerLinks } from '../data/data.js';
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/styles/partials/variables' as *;
 
     li{
         list-style: none;
@@ -42,6 +43,12 @@ import { headerLinks } from '../data/data.js';
             text-transform: uppercase;
             font-size: .8rem;
             font-weight: bold;
+            padding-bottom: 62px;
+
+            &:hover {
+                color: $blue-bg;
+                border-bottom: 3px solid $blue-bg;
+            }
         }
         
     }
