@@ -9,10 +9,10 @@
         </div>
     </div>
     <div class="icon-box d-flex align-items-center">
-        <div class="container py-2 px-0 ">
-            <ul class="d-flex justify-content-around  my-0 py-5">
+        <div class="container py-2 px-0">
+            <ul class="d-flex justify-content-around my-0 py-5">
                 <li v-for="(link, index) in shopList" :key="index" class="d-flex align-items-center  ">
-                    <div class="d-flex justify-content-center  shopicon-box">
+                    <div class="d-flex justify-content-center shopicon-box">
                         <img :src="link.icon" alt="">
                     </div>
                     <span class="text-uppercase text-white ms-3 ">{{ link.text }}</span>

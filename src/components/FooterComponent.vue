@@ -11,8 +11,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="w-50  debug">
-                <img src="" alt="">
+            <div class="w-50 logo-box">
+                <img src="../assets/img/dc-logo-bg.png" alt="">
             </div>
         </div>
     </div>
@@ -30,7 +30,6 @@
                                 <img :src="icon.text" alt="">
                             </a>
                         </div>
-                        
                     </ul>
                 </div>
             </div>
@@ -87,9 +86,21 @@ import {socialLinks} from '../data/data.js';
         
     }
 
-    .linksBox{
+    .linksBox {
         width: 400px;
         height: 300px;
+    }
+
+
+    .logo-box{
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    img{
+        position: absolute;
+        top:-90px;
     }
     
 
