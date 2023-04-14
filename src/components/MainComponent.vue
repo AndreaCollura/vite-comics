@@ -8,17 +8,16 @@
             </div>
         </div>
     </div>
-    <div class="debug iconBox d-flex align-items-center">
-        <div class="container py-2 px-0 debug">
-            <div class="w-100">
-                <!-- fare un v-for -->
-                <ul class="d-flex justify-content-around ps-0 m-0">
-                    <li v-for="(link, index) in shopList" :key="index" class="d-flex align-items-center ">
+    <div class="icon-box d-flex align-items-center">
+        <div class="container py-2 px-0 ">
+            <ul class="d-flex justify-content-around  my-0 py-5">
+                <li v-for="(link, index) in shopList" :key="index" class="d-flex align-items-center  ">
+                    <div class="d-flex justify-content-center  shopicon-box">
                         <img :src="link.icon" alt="">
-                        <span class="text-uppercase text-white ms-1 ">{{ link.text }}</span>
-                    </li>
-                </ul>
-            </div>
+                    </div>
+                    <span class="text-uppercase text-white ms-3 ">{{ link.text }}</span>
+                </li>
+            </ul>
         </div>
     </div>
 </template>
@@ -54,14 +53,14 @@ export default {
     background-color: #1c1c1c;
 }
 
-.iconBox {
+.icon-box {
     background-color: $blue-bg;
     // height: 140px;
 
 }
 
 img {
-    width: 20%;
+    width: 100%;
 }
 
 span {
@@ -72,5 +71,11 @@ span {
 
 ul {
     list-style: none;
+}
+
+
+.shopicon-box{
+    width: 55px;
+    height: 65px;
 }
 </style>
