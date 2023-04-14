@@ -8,7 +8,7 @@
                 <div>
                     <ul class="d-flex gap-4">
                         <li v-for="(link, index) in navList" :key="index" >
-                            <a :href="link.url" :class="{ 'active': link.current }">{{ link.text }}</a>
+                            <a :href="link.url">{{ link.text }}</a>
                         </li>
                     </ul>
                 </div>
