@@ -12,19 +12,19 @@
                 </div>
             </div>
             <div class="w-50 logo-box">
-                <img src="../assets/img/dc-logo-bg.png" alt="">
+                <img class="foot-logo" src="../assets/img/dc-logo-bg.png" alt="">
             </div>
         </div>
     </div>
-    <div class="footerBot d-flex align-items-center debug ">
-        <div class="container py-3 px-0 debug">
+    <div class="footerBot d-flex align-items-center  ">
+        <div class="container py-3 px-0 ">
             <div class="d-flex justify-content-between align-items-center m-0">
                 <div>
-                    <button class="btn btn-primary"></button>
+                    <button class="">sign-up now!</button>
                 </div>
                 <div>
                     <ul class="d-flex align-items-center mb-0">
-                        <li class="me-2">follow us</li>
+                        <li class="me-3 text-uppercase">follow us</li>
                         <div>
                             <a v-for="(icon,index) in socialList" :key="icon" class="me-2" href="">
                                 <img :src="icon.text" alt="">
@@ -76,6 +76,7 @@ import {socialLinks} from '../data/data.js';
 
     li{
         list-style: none;
+        color: $blue-bg;
         a{
             text-decoration: none;
             color: rgba(255, 255, 255, 0.519);
@@ -98,9 +99,19 @@ import {socialLinks} from '../data/data.js';
         overflow: hidden;
     }
 
-    img{
+    .foot-logo{
         position: absolute;
         top:-90px;
+    }
+
+    button{
+        width: 140px;
+        height: 40px;
+        border: 2px solid $blue-bg;
+        margin-left: 10px;
+        background-color: transparent;
+        color: white;
+        text-transform: uppercase;
     }
     
 
