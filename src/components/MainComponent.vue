@@ -1,4 +1,5 @@
 <template>
+    <JumboComponent/>
     <div class="content-bg">
         <div class="container py-4 px-0 ">
             <div class="d-flex justify-content-start m-0">
@@ -24,13 +25,19 @@
 </template>
 
 <script>
+import JumboComponent from './JumboComponent.vue';
 import { mainLinks } from '../data/data.js';
     export default {
         name: 'MainComponent',
         data(){
             return {
                 shopList: mainLinks,
+
             }
+        },
+        components: {
+            JumboComponent,
+
         }
 
         
