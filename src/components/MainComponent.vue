@@ -61,6 +61,8 @@ export default {
 
 img {
     width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 span {
@@ -75,7 +77,7 @@ ul {
 
 
 .shopicon-box{
-    width: 55px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
 }
 </style>
